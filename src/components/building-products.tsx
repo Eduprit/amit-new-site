@@ -67,9 +67,9 @@ export const BuildingProducts = () => {
         <li className="my-4 flex items-center">
           {/* <ScatterChart size={48} strokeWidth={0.5} /> */}
           <div>
-            <h3 className="text-md font-bold lg:text-lg">Analytics</h3>
+            <h3 className="text-md font-bold lg:text-lg">Product Management</h3>
             <p className="text-sm lg:text-base">
-              Data driven decisions, user metrics, patterns & trends
+              Overseeing the product lifecycle from 0 to 1, emphasizing user-centric design and data-driven improvement strategies
             </p>
           </div>
         </li>

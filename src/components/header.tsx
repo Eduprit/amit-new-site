@@ -1,4 +1,4 @@
-import { User, ScrollText } from "lucide-react";
+import { User, ScrollText, TentTree,Sparkles } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { siteConfig } from "@/site.config";
 
@@ -21,7 +21,21 @@ const Header = () => {
           className="flex items-end justify-end gap-2 rounded-lg p-2 transition-colors lg:hover:bg-accent lg:hover:text-white"
         >
           <ScrollText size={20} />
-          <span className="text-sm">Blog</span>
+          {/* <span className="text-sm">Blog</span> */}
+        </a>
+        <a
+          href="/hobbies"
+          className="flex items-end justify-end gap-2 rounded-lg p-2 transition-colors lg:hover:bg-accent lg:hover:text-white"
+        >
+         <TentTree size={20} />
+          {/* <span className="text-sm">Hobbies</span> */}
+        </a>
+        <a
+          href="/now"
+          className="flex items-end justify-end gap-2 rounded-lg p-2 transition-colors lg:hover:bg-accent lg:hover:text-white"
+        >
+         <Sparkles size={20} />
+          {/* <span className="text-sm">Now</span>  */}
         </a>
         <a
           href="/about"
