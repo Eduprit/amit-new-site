@@ -1,6 +1,7 @@
-export const StravaIcon = () => {
+export const StravaIcon = ({ className }: { className?: string }) => {
   return (
     <svg
+      className={className}
       width="22"
       height="22"
       viewBox="0 0 24 24"

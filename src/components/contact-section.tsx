@@ -1,3 +1,4 @@
+import { StravaIcon } from "@/icons/strava";
 import { siteConfig } from "@/site.config";
 import {
   ArrowUpRightIcon,
@@ -5,7 +6,6 @@ import {
   MailIcon,
   MailboxIcon,
   TwitterIcon,
-  X,
 } from "lucide-react";
 
 export const ContactSection = () => {
@@ -49,10 +49,10 @@ export const ContactSection = () => {
       </div>
       <div className="my-4 grid max-w-sm grid-cols-[80px_1fr] place-content-start gap-x-5 p-4 lg:gap-x-10">
         <a
-          href={siteConfig.socialLinks.x}
+          href={siteConfig.socialLinks.strava}
           className="flex h-16 w-16 items-center justify-center place-self-center rounded-full border-2 text-neutral-300 transition-all hover:scale-110 hover:text-neutral-600 dark:border-neutral-400  dark:hover:border-neutral-200 dark:hover:text-neutral-100 lg:h-24 lg:w-24"
         >
-          <X className="text-current" />
+          <StravaIcon className="text-current" />
         </a>
         <a
           href={siteConfig.socialLinks.email}

@@ -12,7 +12,7 @@ export const siteConfig = {
     linkedIn: "https://www.linkedin.com/in/tirpude",
     instagram: "https://www.instagram.com/amit18.9",
     email: "mailto:tirpude@gmail.com",
-    strava: "https://x.com/tirpude09",
-    psn: "https://x.com/tirpude09",
+    strava: "https://www.strava.com/athletes/amit_tirpude",
+    psn: "https://psnprofiles.com/tirpude",
   },
 };
