@@ -24,7 +24,7 @@ const About = () => {
 
         <figure className="relative mb-10 h-[500px] w-full  lg:h-[600px] ">
           <Image
-            src="/assets/profile.jpeg"
+            src="/assets/profile.jpg"
             alt="Profile photo"
             fill
             style={{ objectFit: "cover" }}
