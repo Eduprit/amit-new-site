@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       sans: ["Montserrat", "system-ui", "sans-serif"],
-      serif: ["Modern Gallery", "serif"],
+      serif: ["Playfair Display", "serif"],
     },
     extend: {
       colors: {

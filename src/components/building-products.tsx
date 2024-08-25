@@ -11,7 +11,7 @@ export const BuildingProducts = () => {
     <section className="my-24  px-5 xl:px-0">
       <div className="md:flex">
         <div className="max-w-lg">
-          <h2 className="font-serif text-5xl leading-none text-accent md:text-7xl">
+          <h2 className=" text-5xl leading-none text-accent md:text-7xl">
             Experience in education & academia
           </h2>
           <p className="my-4 md:text-xl lg:mb-4 lg:mt-10">

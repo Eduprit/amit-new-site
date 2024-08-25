@@ -13,7 +13,7 @@ export const ThoughtsOnProducts = async () => {
     <section className="my-24  px-5 xl:px-0">
       <div className="md:flex lg:gap-8">
         <div className="max-w-">
-          <h2 className="mb-8 font-serif text-5xl leading-tight text-accent md:mb-12 md:text-7xl">
+          <h2 className="mb-8 text-5xl leading-tight text-accent md:mb-12 md:text-7xl">
             Blog
           </h2>
           {articles.map((article, idx) => (

@@ -12,7 +12,7 @@ export const ContactSection = () => {
   return (
     <section className="my-32 px-5  md:my-44 md:flex md:justify-between  xl:px-0">
       <div className="">
-        <h2 className="mb-8 max-w-lg font-serif text-5xl leading-tight text-accent md:mb-8 md:text-8xl">
+        <h2 className="mb-8 max-w-lg  text-5xl leading-tight text-accent md:mb-8 md:text-8xl">
           Let&apos;s talk!
         </h2>
         <div className="max-w-lg">

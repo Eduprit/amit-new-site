@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 flex items-center bg-white  px-5 py-5 transition-all dark:bg-neutral-900 md:mt-5 xl:px-0">
       <a
-        className="flex items-center gap-1 font-serif text-xl font-bold uppercase text-accent transition-all md:hover:scale-125"
+        className="flex items-center gap-1 text-xl font-bold uppercase text-accent transition-all md:hover:scale-125"
         href="/"
       >
         {siteConfig.header.logoName}{" "}

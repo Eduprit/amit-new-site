@@ -30,11 +30,4 @@
   body {
     @apply bg-background text-foreground;
   }
-  @font-face {
-    font-family: "Modern Gallery";
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-    src: url(/fonts/gallery-modern.woff2) format("woff2");
-  }
 }

@@ -9,7 +9,7 @@ export default function Blog() {
 
   return (
     <div className="px-5 xl:px-0">
-      <h1 className="my-4 font-serif text-5xl  font-bold text-accent md:text-8xl">
+      <h1 className="my-4  text-5xl  font-bold text-accent md:text-8xl">
         Blog
       </h1>
       <p className="text-xl">Thoughts on building products</p>

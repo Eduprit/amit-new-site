@@ -59,7 +59,7 @@ export default async function PostPage({ params }: PostProps) {
         <ArrowLeft strokeWidth="1" /> Back to blog
       </a>
       <article className="mb-32 px-5 xl:px-0">
-        <h1 className="my-4 font-serif text-5xl  font-bold text-accent md:text-8xl">
+        <h1 className="my-4  text-5xl  font-bold text-accent md:text-8xl">
           {post.title}
         </h1>
         <p className="text-xl">{post.description}</p>

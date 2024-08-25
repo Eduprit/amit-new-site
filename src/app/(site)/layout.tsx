@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "../globals.css";
 import { siteConfig } from "@/site.config";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const montserratFont = Montserrat({ subsets: ["latin"] });
+const playFairDisplayFont = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserratFont.className}>
+      <body className={`${playFairDisplayFont.className}`}>
         <ThemeProvider attribute="class">
           <main className="mx-auto min-h-screen max-w-screen-lg">
             <Header />
