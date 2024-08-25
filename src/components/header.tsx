@@ -1,4 +1,4 @@
-import { User } from "lucide-react";
+import { User, ScrollText } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { siteConfig } from "@/site.config";
 
@@ -15,7 +15,14 @@ const Header = () => {
           className="fill-green-600 stroke-white dark:stroke-slate-800"
         /> */}
       </a>
-      <div className="ml-auto flex gap-4 md:gap-9">
+      <div className="ml-auto flex gap-2 md:gap-4">
+        <a
+          href="/blog"
+          className="flex items-end justify-end gap-2 rounded-lg p-2 transition-colors lg:hover:bg-accent lg:hover:text-white"
+        >
+          <ScrollText size={20} />
+          <span className="text-sm">Blog</span>
+        </a>
         <a
           href="/about"
           className="flex items-end justify-end gap-2 rounded-lg p-2 transition-colors lg:hover:bg-accent lg:hover:text-white"
