@@ -87,7 +87,7 @@ const Intro = () => {
 
       <figure className="relative m-0 h-[400px] w-full lg:h-[800px]">
         <Image
-          src="/assets/profile.jpeg"
+          src="/assets/profile.jpg"
           alt={`${siteConfig.firstName} Profile picture`}
           fill
           style={{ objectFit: "cover" }}
