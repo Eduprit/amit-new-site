@@ -51,12 +51,12 @@ const Footer = () => {
         <p className="my-2">
           © 2024 {siteConfig.firstName} {siteConfig.lastName}
         </p>
-        <p className="my-2 ">
+        {/* <p className="my-2 ">
           Designed & built by{" "}
           <a className="hover:underline" href="https://ravigopal.com">
             Ravigopal Kesari
           </a>
-        </p>
+        </p> */}
       </div>
     </footer>
   );

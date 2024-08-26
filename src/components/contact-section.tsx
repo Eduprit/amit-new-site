@@ -17,8 +17,7 @@ export const ContactSection = () => {
         </h2>
         <div className="max-w-lg">
           <h3 className="mb-8 text-lg">
-            Always open to connect with people in tech, learn more about product
-            management, and discuss navigating this rewarding career path.
+          Always eager to connect with fellow EdTech enthusiasts, product innovators, and lifelong learners. Whether you want to discuss the future of digital education, share marathon training tips, or explore the fascinating world where math meets AI, I'm all ears. Let's exchange ideas on how we can make learning more accessible and enjoyable for everyone!
           </h3>
           <p className="mb-4 text-base">
             Drop in a mail or reach out on LinkedIn
