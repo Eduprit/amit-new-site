@@ -32,20 +32,20 @@ const hobbies = [
 const HobbiesPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">My Hobbies</h1>
+      <h1 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-100">My Hobbies</h1>
       
-      <p className="mb-8 text-gray-600 leading-relaxed">
-        In my spare time, I'm an avid <span className="font-semibold text-blue-600">runner</span>, 
-        a passionate amateur <span className="font-semibold text-green-600">speed-cuber</span>, 
-        a melodious <span className="font-semibold text-purple-600">flutist</span>, and 
-        a keen-eyed <span className="font-semibold text-red-600">photographer</span>. I like to spend my 
+      <p className="mb-8 text-gray-600 dark:text-gray-300 leading-relaxed">
+        In my spare time, I'm an avid <span className="font-semibold text-blue-600 dark:text-blue-400">runner</span>, 
+        a passionate amateur <span className="font-semibold text-green-600 dark:text-green-400">speed-cuber</span>, 
+        a melodious <span className="font-semibold text-purple-600 dark:text-purple-400">flutist</span>, and 
+        a keen-eyed <span className="font-semibold text-red-600 dark:text-red-400">photographer</span>. I like to spend my 
         leisure hours engaged in physical, creative, and intellectually stimulating pursuits that allow me to 
         express myself and grow as a person.
       </p>
 
       <div className="space-y-12">
         {hobbies.map((hobby) => (
-          <section key={hobby.name} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+          <section key={hobby.name} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
             <div className="relative h-64 sm:h-80">
               <Image
                 src={hobby.imageUrl}
@@ -55,8 +55,8 @@ const HobbiesPage = () => {
               />
             </div>
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-3 text-gray-800">{hobby.name}</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <h2 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-gray-100">{hobby.name}</h2>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 {hobby.description}
               </p>
             </div>
@@ -64,7 +64,7 @@ const HobbiesPage = () => {
         ))}
       </div>
 
-      <p className="mt-12 text-gray-600 leading-relaxed">
+      <p className="mt-12 text-gray-600 dark:text-gray-300 leading-relaxed">
         These diverse hobbies complement each other, offering a mix of physical activity, mental challenges, 
         creative expression, and moments of tranquility. They reflect my curiosity, my drive for self-improvement, 
         and my appreciation for both the intricate details and the broader beauty of life.
