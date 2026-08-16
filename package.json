@@ -2,7 +2,7 @@
   "name": "amit-website",
   "version": "0.1.0",
   "private": true,
-  "author": "Ravigopal Kesari <hello@ravigopal.com>",
+  "author": "Amit Tirpude <tirpude@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "chart.js": "^4.4.4",
     "clsx": "^2.1.0",
     "contentlayer": "^0.3.4",
     "date-fns": "^3.6.0",

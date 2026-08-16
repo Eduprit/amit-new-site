@@ -1,0 +1,43 @@
+{
+  "updated": "2026-08-17",
+  "currently": [
+    {
+      "text": "Building Luminary Steps — career discovery for Indian students in grades 6–12",
+      "url": "/luminary-steps"
+    },
+    {
+      "text": "Counselling and mentoring students, and listening more than I talk",
+      "url": ""
+    },
+    {
+      "text": "Building academic content for the NGO 'JOSH'",
+      "url": ""
+    }
+  ],
+  "interests": [
+    "Scalable educational solutions",
+    "Accessible and engaging content development",
+    "Product management",
+    "Gamification in education"
+  ],
+  "media": [
+    {
+      "category": "Books",
+      "favourite": "The Humble Pi",
+      "last": "Project Hail Mary",
+      "next": "A Flicker in the Dark"
+    },
+    {
+      "category": "Movies",
+      "favourite": "The Matrix",
+      "last": "Deadpool and Wolverine",
+      "next": "It Ends with Us"
+    },
+    {
+      "category": "TV Shows",
+      "favourite": "That 70s Show",
+      "last": "3 Body Problem",
+      "next": "Normal People"
+    }
+  ]
+}
