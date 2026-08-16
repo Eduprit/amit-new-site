@@ -1,13 +1,12 @@
 import React from 'react';
-import { User, ScrollText, TentTree, Sparkles } from "lucide-react";
+import { User, Compass, TentTree } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { siteConfig } from "@/site.config";
 
 const Header = () => {
   const navItems = [
-    { href: "/blog", title: "Blog", Icon: ScrollText },
+    { href: "/luminary-steps", title: "Luminary Steps", Icon: Compass },
     { href: "/hobbies", title: "Hobbies", Icon: TentTree },
-    { href: "/now", title: "Now", Icon: Sparkles },
     { href: "/about", title: "About", Icon: User },
   ];
 

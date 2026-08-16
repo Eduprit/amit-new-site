@@ -1,36 +1,68 @@
 import Image from "next/image";
+import Link from "next/link";
+import { siteConfig } from "@/site.config";
+
+export const metadata = {
+  title: "About",
+  description:
+    "Educator turned founder, building Luminary Steps — career discovery for Indian students.",
+};
 
 const About = () => {
   return (
     <div className="px-5 xl:px-0">
-      <h1 className="my-4 text-5xl font-bold text-accent md:text-8xl">
-        About
-      </h1>
+      <h1 className="my-4 text-5xl font-bold text-accent md:text-8xl">About</h1>
       <div className="flex flex-col-reverse md:flex-row-reverse md:gap-20">
         <div className="max-w-lg text-pretty text-base leading-relaxed md:text-lg">
           <p>
-            Hey, I'm Amit Tirpude. I'm a tech enthusiast and lifelong learner with a passion for making education accessible to everyone. My journey in the world of education and technology has been shaped by a simple belief: knowledge has the power to transform lives.
+            Hey, I&apos;m Amit. I&apos;m an educator who ended up building
+            products, and right now I&apos;m building{" "}
+            <Link
+              href="/luminary-steps"
+              className="font-bold text-accent underline underline-offset-4"
+            >
+              Luminary Steps
+            </Link>{" "}
+            &mdash; career discovery for Indian students in grades 6&ndash;12.
           </p>
           <p className="my-4">
-            Growing up in India, I saw firsthand how education could open doors and create opportunities. This inspired me to dive into the world of EdTech, where I've worked on developing innovative learning solutions that can reach people regardless of their background or location.
+            I studied at IIT Bombay, and I&apos;ve spent my career since then
+            inside education: teaching, designing curricula, leading academic
+            teams, and working out how to make good learning reach further than
+            a single classroom. Mathematics is where I started, and it still
+            shapes how I think about most problems.
           </p>
           <p className="my-4">
-            When I'm not geeking out over the latest in educational technology, you might find me:
+            Somewhere along the way I started spending more time counselling and
+            mentoring students than building things for them. That turned out to
+            be the useful part. Sitting with a fifteen-year-old who&apos;s about
+            to choose their subjects for class 11, and realising how little they
+            have to go on, is where Luminary Steps came from.
           </p>
-          <ul className="list-disc pl-5 mb-4">
-            <li>Exploring the intersection of pure mathematics and AI (yes, I find this fun!)</li>
-            <li>Dreaming up new ways to make learning more engaging and accessible</li>
-            <li>Running long distances or training for my next marathon</li>
-            <li>Mentoring young talents and helping them discover their potential</li>
+          <p className="my-4">
+            Away from work, you&apos;ll usually find me:
+          </p>
+          <ul className="mb-4 list-disc pl-5">
+            <li>Running long distances, or recovering from having run one</li>
+            <li>
+              Somewhere at the intersection of pure mathematics and AI, which I
+              promise is fun
+            </li>
+            <li>Solving a Rubik&apos;s cube faster than I did last week</li>
+            <li>Working out one more piece on the flute</li>
+            <li>Taking photos of things most people walk past</li>
           </ul>
-          <p>
-            I believe that in today's world, continuous learning is key. Whether it's picking up a new coding language, understanding a complex math concept, or pushing my physical limits in a marathon, I'm always up for a challenge.
-          </p>
-          <p className="mt-4">
-            Through this website, I hope to share my experiences, insights, and the occasional random thought. Feel free to explore and reach out if you'd like to chat about EdTech, mathematics, long-distance running, or just exchange ideas on how we can make learning more awesome for everyone.
-          </p>
-          <p className="mt-4 font-semibold">
-            Let's learn, grow, and make a difference together!
+          <p className="my-4">
+            I&apos;m always up for a conversation about education, product, or
+            why career guidance for teenagers is so much worse than it needs to
+            be.{" "}
+            <a
+              href={siteConfig.socialLinks.email}
+              className="font-bold text-accent underline underline-offset-4"
+            >
+              Say hello
+            </a>
+            .
           </p>
         </div>
 

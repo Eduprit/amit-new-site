@@ -1,10 +1,4 @@
 import { Skills } from "@/icons/skills";
-import {
-  ArrowDown01,
-  Paintbrush,
-  Presentation,
-  ScatterChart,
-} from "lucide-react";
 
 export const BuildingProducts = () => {
   return (
@@ -12,15 +6,14 @@ export const BuildingProducts = () => {
       <div className="md:flex">
         <div className="max-w-lg">
           <h2 className=" text-5xl leading-none text-accent md:text-7xl">
-            Experience in education & academia
+            Background
           </h2>
           <p className="my-4 md:text-xl lg:mb-4 lg:mt-10">
-            I possess a robust foundation in mathematics, teaching
-            methodologies, and the art of scaling academic teams.{" "}
+            A foundation in mathematics, teaching methodology, and the
+            unglamorous work of scaling academic teams.
           </p>
           <p className="my-4 md:my-0 md:text-xl">
-            With my startup background, I bring a lean mindset for building
-            products fast.
+            Plus a startup habit of shipping before it&apos;s perfect.
           </p>
         </div>
 
