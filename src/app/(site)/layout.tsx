@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: `%s  | ${siteConfig.siteTitle}`,
     default: siteConfig.siteTitle,
   },
-  description: siteConfig.description,
+  description: siteConfig.metaDescription,
 };
 
 export default function RootLayout({

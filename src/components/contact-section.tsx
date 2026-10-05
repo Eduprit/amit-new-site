@@ -1,12 +1,6 @@
-import { StravaIcon } from "@/icons/strava";
-import { siteConfig } from "@/site.config";
-import {
-  ArrowUpRightIcon,
-  LinkedinIcon,
-  MailIcon,
-  MailboxIcon,
-  TwitterIcon,
-} from "lucide-react";
+import { LuminaryStepsIcon } from "@/icons/luminary-steps";
+import { lsUrl, siteConfig } from "@/site.config";
+import { ArrowUpRightIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 export const ContactSection = () => {
   return (
@@ -17,19 +11,23 @@ export const ContactSection = () => {
         </h2>
         <div className="max-w-lg">
           <h3 className="mb-8 text-lg">
-          Always eager to connect with fellow EdTech enthusiasts, product innovators, and lifelong learners. Whether you want to discuss the future of digital education, share marathon training tips, or explore the fascinating world where math meets AI, I'm all ears. Let's exchange ideas on how we can make learning more accessible and enjoyable for everyone!
+            I&apos;m always up for a conversation with people building in
+            education: founders, counsellors, school leaders, or anyone who
+            thinks career guidance for teenagers deserves better than a single
+            aptitude test and a shrug. Marathon training talk and the odd
+            detour into where maths meets AI are also welcome.
           </h3>
           <p className="mb-4 text-base">
-            Drop in a mail or reach out on LinkedIn
+            Drop me a mail or reach out on LinkedIn.
           </p>
           <ul className="items-center gap-4 md:flex md:gap-8">
             <li className="my-6 md:my-0">
               <p className="text-sm font-bold uppercase text-accent">Email</p>
               <a
-                href={`mailto:${siteConfig.socialLinks.email}`}
+                href={siteConfig.socialLinks.email}
                 className="transition-all hover:text-accent hover:underline"
               >
-                {siteConfig.socialLinks.email.replace(/^(mailto?:|)/, "")}
+                {siteConfig.socialLinks.email.replace(/^mailto:/, "")}
               </a>
             </li>
             <li className="my-6 md:my-0">
@@ -48,10 +46,11 @@ export const ContactSection = () => {
       </div>
       <div className="my-4 grid max-w-sm grid-cols-[80px_1fr] place-content-start gap-x-5 p-4 lg:gap-x-10">
         <a
-          href={siteConfig.socialLinks.strava}
+          href={lsUrl("/", "contact")}
+          aria-label="Luminary Steps"
           className="flex h-16 w-16 items-center justify-center place-self-center rounded-full border-2 text-neutral-300 transition-all hover:scale-110 hover:text-neutral-600 dark:border-neutral-400  dark:hover:border-neutral-200 dark:hover:text-neutral-100 lg:h-24 lg:w-24"
         >
-          <StravaIcon className="text-current" />
+          <LuminaryStepsIcon className="h-1/2 w-1/2" />
         </a>
         <a
           href={siteConfig.socialLinks.email}

@@ -1,6 +1,6 @@
-import { StravaIcon } from "@/icons/strava";
-import { siteConfig } from "@/site.config";
-import { InstagramIcon, LinkedinIcon, MailboxIcon } from "lucide-react";
+import { LuminaryStepsIcon } from "@/icons/luminary-steps";
+import { lsUrl, siteConfig } from "@/site.config";
+import { LinkedinIcon, MailboxIcon } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -20,15 +20,6 @@ const Footer = () => {
           </li>
           <li className="basis-1/3  md:basis-0">
             <a
-              className="flex items-center gap-2 text-center text-base "
-              href={siteConfig.socialLinks.instagram}
-            >
-              <InstagramIcon /> <span>Instagram</span>
-            </a>
-          </li>
-
-          <li className="basis-1/3  md:basis-0">
-            <a
               className="flex  items-center gap-2 text-center text-base "
               href={siteConfig.socialLinks.email}
             >
@@ -38,10 +29,10 @@ const Footer = () => {
           <li className="basis-1/3  md:basis-0">
             <a
               className="flex items-center gap-2 text-center text-base "
-              href={siteConfig.socialLinks.strava}
+              href={lsUrl("/", "footer")}
             >
-              <StravaIcon />
-              <span>Strava</span>
+              <LuminaryStepsIcon className="h-6 w-6 shrink-0" />
+              <span className="whitespace-nowrap">Luminary Steps</span>
             </a>
           </li>
         </ul>
@@ -49,7 +40,7 @@ const Footer = () => {
       <hr className="mt-10 dark:border-neutral-500" />
       <div className="justify-between p-5 text-center text-sm md:flex md:px-4 lg:px-0">
         <p className="my-2">
-          © 2024 {siteConfig.firstName} {siteConfig.lastName}
+          © {new Date().getFullYear()} {siteConfig.firstName} {siteConfig.lastName}
         </p>
         {/* <p className="my-2 ">
           Designed & built by{" "}
