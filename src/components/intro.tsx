@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { LinkedinIcon, MailboxIcon } from "lucide-react";
-import { siteConfig } from "@/site.config";
-import { StravaIcon } from "@/icons/strava";
+import { ArrowUpRight, LinkedinIcon, MailboxIcon } from "lucide-react";
+import { lsUrl, siteConfig } from "@/site.config";
 
 const Intro = () => {
   const desc = siteConfig.description.split("/n");
@@ -22,6 +21,13 @@ const Intro = () => {
               dangerouslySetInnerHTML={{ __html: d }}
             />
           ))}
+
+          <a
+            href={lsUrl("/", "home")}
+            className="mt-2 inline-flex items-center justify-center gap-1 rounded-full border-2 border-current bg-accent px-6 py-3 text-center text-base font-bold tracking-wide text-white transition-all hover:cursor-pointer hover:bg-transparent hover:text-neutral-800 dark:bg-neutral-800 dark:hover:text-neutral-200"
+          >
+            Try Luminary Steps <ArrowUpRight />
+          </a>
 
           <ul className="mt-10 grid list-none  grid-cols-2 gap-4 p-0">
             <li>
@@ -44,17 +50,6 @@ const Intro = () => {
                   <MailboxIcon />
                 </span>
                 <span>Email</span>
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-md flex items-center gap-2 leading-none"
-                href={siteConfig.socialLinks.strava}
-              >
-                <span>
-                  <StravaIcon />
-                </span>
-                <span>Strava</span>
               </a>
             </li>
           </ul>

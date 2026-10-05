@@ -1,5 +1,5 @@
-import { StravaIcon } from "@/icons/strava";
-import { siteConfig } from "@/site.config";
+import { LuminaryStepsIcon } from "@/icons/luminary-steps";
+import { lsUrl, siteConfig } from "@/site.config";
 import { ArrowUpRightIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 export const ContactSection = () => {
@@ -12,13 +12,13 @@ export const ContactSection = () => {
         <div className="max-w-lg">
           <h3 className="mb-8 text-lg">
             I&apos;m always up for a conversation with people building in
-            education &mdash; founders, counsellors, school leaders, or anyone
-            who thinks career guidance for teenagers deserves better than a
-            personality quiz and a shrug. Marathon training talk and the odd
+            education: founders, counsellors, school leaders, or anyone who
+            thinks career guidance for teenagers deserves better than a single
+            aptitude test and a shrug. Marathon training talk and the odd
             detour into where maths meets AI are also welcome.
           </h3>
           <p className="mb-4 text-base">
-            Drop me a mail or reach out on LinkedIn
+            Drop me a mail or reach out on LinkedIn.
           </p>
           <ul className="items-center gap-4 md:flex md:gap-8">
             <li className="my-6 md:my-0">
@@ -46,10 +46,11 @@ export const ContactSection = () => {
       </div>
       <div className="my-4 grid max-w-sm grid-cols-[80px_1fr] place-content-start gap-x-5 p-4 lg:gap-x-10">
         <a
-          href={siteConfig.socialLinks.strava}
+          href={lsUrl("/", "contact")}
+          aria-label="Luminary Steps"
           className="flex h-16 w-16 items-center justify-center place-self-center rounded-full border-2 text-neutral-300 transition-all hover:scale-110 hover:text-neutral-600 dark:border-neutral-400  dark:hover:border-neutral-200 dark:hover:text-neutral-100 lg:h-24 lg:w-24"
         >
-          <StravaIcon className="text-current" />
+          <LuminaryStepsIcon className="h-1/2 w-1/2" />
         </a>
         <a
           href={siteConfig.socialLinks.email}

@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { siteConfig } from "@/site.config";
+import { LuminaryStepsIcon } from "@/icons/luminary-steps";
+import { lsUrl, siteConfig } from "@/site.config";
 
 export const metadata: Metadata = {
   title: "Luminary Steps",
   description:
-    "Career discovery for Indian students in grades 6–12 — and why I'm building it.",
+    "Career discovery for Indian students in grades 9 to 12, and why I'm building it.",
 };
 
 const team = [
   {
-    who: "Gen Z builders",
+    who: "Builders",
     what: "close enough to the problem to still remember it",
   },
   {
@@ -35,22 +37,45 @@ const team = [
   },
 ];
 
+const primaryButton =
+  "my-2 inline-flex items-center justify-center gap-1 rounded-full border-2 border-current bg-accent px-6 py-3 text-center text-base font-bold tracking-wide text-white transition-all hover:cursor-pointer hover:bg-transparent hover:text-neutral-800 dark:bg-neutral-800 dark:hover:text-neutral-200";
+const secondaryButton =
+  "my-2 inline-flex items-center justify-center gap-1 rounded-full border-2 border-accent px-6 py-3 text-center text-base font-bold tracking-wide text-accent transition-all hover:cursor-pointer hover:bg-accent hover:text-white";
+
 const LuminaryStepsPage = () => {
   return (
     <div className="px-5 xl:px-0">
       <header className="mb-16 md:mb-24">
-        <p className="mb-4 inline-block rounded-full border-2 border-accent px-4 py-1 text-sm font-bold uppercase tracking-wide text-accent">
-          Coming soon
-        </p>
-        <h1 className="my-4 text-5xl font-bold leading-none text-accent md:text-8xl">
+        <h1 className="my-4 flex items-center gap-3 text-5xl font-bold leading-none text-accent md:gap-5 md:text-8xl">
+          <LuminaryStepsIcon className="h-12 w-12 shrink-0 md:h-20 md:w-20" />
           Luminary Steps
         </h1>
         <p className="mt-8 max-w-2xl text-pretty text-lg leading-relaxed md:text-2xl">
-          Career discovery for Indian students in grades 6&ndash;12. An
-          assessment that takes a student&apos;s interests, aptitudes and
-          personality seriously &mdash; and turns them into something they can
-          actually act on.
+          Career discovery for students in grades 9 to 12. A student answers 35
+          questions about how they think, what they enjoy and how they learn,
+          and gets a short list of careers that suit them, along with what it
+          would take to get there.
         </p>
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a href={lsUrl("/", "ls_page")} className={primaryButton}>
+            Start the free assessment <ArrowUpRight />
+          </a>
+          <a href={lsUrl("/", "ls_page")} className={secondaryButton}>
+            Go to luminarysteps.com <ArrowUpRight />
+          </a>
+        </div>
+        <figure className="mt-12 max-w-3xl">
+          <Image
+            src="/assets/luminary-steps/blueprint-top-match.png"
+            alt="The top of a Career Blueprint: Game Developer / Graphics Engineer, a 76% match, with the reason it fits"
+            width={772}
+            height={320}
+            className="h-auto w-full rounded-2xl border border-neutral-200 shadow-sm dark:border-neutral-700"
+          />
+          <figcaption className="mt-3 text-sm text-neutral-500 dark:text-neutral-400">
+            The top of a Career Blueprint: the career that fits best, and why.
+          </figcaption>
+        </figure>
       </header>
 
       <section className="my-20 md:my-28">
@@ -114,6 +139,73 @@ const LuminaryStepsPage = () => {
 
       <section className="my-20 md:my-28">
         <h2 className="mb-8 text-4xl leading-none text-accent md:text-6xl">
+          What it gives you
+        </h2>
+        <div className="max-w-2xl text-pretty text-base leading-relaxed md:text-lg">
+          <p className="mb-5">
+            The first report is free. It covers a student&apos;s personality
+            type, their interests, how they learn best, and the one career we
+            think fits them most.
+          </p>
+          <p className="mb-5">
+            If they want more, the paid Career Blueprint gives the full plan for
+            their top match, plus a second career of their choice. Each one
+            comes with salary ranges in India, the entrance exams involved, and
+            a plan that runs from class 11 into the first job.
+          </p>
+          <p className="mb-5">
+            Families who&apos;d rather talk it through can book a session with
+            one of our certified career counsellors, online or in person in
+            Bhopal.
+          </p>
+        </div>
+      </section>
+
+      <div className="m-auto h-12 w-12 rounded-full bg-accent hover:animate-ping" />
+
+      <section className="my-20 md:my-28">
+        <h2 className="mb-8 text-4xl leading-none text-accent md:text-6xl">
+          The Stream Matrix
+        </h2>
+        <div className="max-w-2xl text-pretty text-base leading-relaxed md:text-lg">
+          <p className="mb-5">
+            Most students choose a Class 11 stream before they know what careers
+            it leads to, and many pick Science because they&apos;ve been told it
+            keeps every door open. That isn&apos;t quite true. Law, Design, CA
+            and the Civil Services are open from every stream, and plenty of
+            other careers need just one extra subject. The{" "}
+            <a
+              href={lsUrl("/streams", "ls_page")}
+              className="font-bold text-accent underline underline-offset-4"
+            >
+              Stream Matrix
+            </a>{" "}
+            shows where PCM, PCB, Commerce and Humanities can each take you.
+            It&apos;s free, with no sign-up. A Blueprint adds a personal version
+            that lays the student&apos;s own careers against every Class 11
+            subject choice.
+          </p>
+        </div>
+        <figure className="mt-8 max-w-3xl">
+          <a href={lsUrl("/streams", "ls_page")}>
+            <Image
+              src="/assets/luminary-steps/stream-matrix.png"
+              alt="The Stream Matrix: tabs for PCM, PCB, Commerce and Humanities, with where the PCM stream leads"
+              width={772}
+              height={464}
+              className="h-auto w-full rounded-2xl border border-neutral-200 shadow-sm dark:border-neutral-700"
+            />
+          </a>
+          <figcaption className="mt-3 text-sm text-neutral-500 dark:text-neutral-400">
+            What the PCM stream opens up, from the Stream Matrix.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div className="m-auto h-12 w-12 rounded-full bg-accent hover:animate-ping" />
+
+      <section className="my-20 md:my-28">
+        <h2 className="mb-8 text-4xl leading-none text-accent md:text-6xl">
           Who&apos;s building it
         </h2>
         <div className="max-w-2xl text-pretty text-base leading-relaxed md:text-lg">
@@ -138,19 +230,27 @@ const LuminaryStepsPage = () => {
 
       <section className="my-24 md:my-32">
         <h2 className="mb-6 text-4xl leading-none text-accent md:text-6xl">
-          Want to know when it launches?
+          Try it
         </h2>
-        <p className="mb-8 max-w-2xl text-pretty text-base leading-relaxed md:text-lg">
-          If you run a school, work with students, or are building something
-          adjacent &mdash; I&apos;d like to hear from you. The more
-          conversations this thing is built on, the better it gets.
-        </p>
-        <a
-          href={siteConfig.socialLinks.email}
-          className="my-4 inline-flex items-center justify-center gap-1 rounded-full border-2 border-current bg-accent px-6 py-3 text-center text-base font-bold tracking-wide text-white transition-all hover:cursor-pointer hover:bg-transparent hover:text-neutral-800 dark:bg-neutral-800 dark:hover:text-neutral-200"
-        >
-          Get in touch <ArrowUpRight />
-        </a>
+        <div className="mb-8 max-w-2xl text-pretty text-base leading-relaxed md:text-lg">
+          <p className="mb-5">
+            If your child is in grades 9 to 12, it takes about twenty minutes,
+            and the first report doesn&apos;t cost anything.
+          </p>
+          <p className="mb-5">
+            If you run a school or work with students, write to me. Most of
+            what&apos;s good in Luminary Steps came out of conversations like
+            that.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-4">
+          <a href={lsUrl("/", "ls_page")} className={primaryButton}>
+            Start the free assessment <ArrowUpRight />
+          </a>
+          <a href={siteConfig.socialLinks.email} className={secondaryButton}>
+            Email me <ArrowUpRight />
+          </a>
+        </div>
       </section>
     </div>
   );

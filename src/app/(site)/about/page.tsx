@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { siteConfig } from "@/site.config";
+import { lsUrl, siteConfig } from "@/site.config";
 
 export const metadata = {
   title: "About",
   description:
-    "Educator turned founder, building Luminary Steps — career discovery for Indian students.",
+    "Educator turned founder, building Luminary Steps, career discovery for Indian students in grades 9 to 12.",
 };
 
 const About = () => {
@@ -22,8 +22,8 @@ const About = () => {
               className="font-bold text-accent underline underline-offset-4"
             >
               Luminary Steps
-            </Link>{" "}
-            &mdash; career discovery for Indian students in grades 6&ndash;12.
+            </Link>
+            , career discovery for Indian students in grades 9 to 12.
           </p>
           <p className="my-4">
             I studied at IIT Bombay, and I&apos;ve spent my career since then
@@ -37,7 +37,14 @@ const About = () => {
             mentoring students than building things for them. That turned out to
             be the useful part. Sitting with a fifteen-year-old who&apos;s about
             to choose their subjects for class 11, and realising how little they
-            have to go on, is where Luminary Steps came from.
+            have to go on, is where Luminary Steps came from. You can try it at{" "}
+            <a
+              href={lsUrl("/", "about")}
+              className="font-bold text-accent underline underline-offset-4"
+            >
+              luminarysteps.com
+            </a>
+            .
           </p>
           <p className="my-4">
             Away from work, you&apos;ll usually find me:
